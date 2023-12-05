@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Goldman", cursive;
+}
+  
+        /* style navigatie bar */
+  
+nav {
+  position: fixed;/* Stel de positie vast op 'fixed' */
+  top:0;/* Plaats de navbar aan de bovenkant van het scherm */
+  width: 100%;
+  display: flex;
+  padding: 2rem;
+  min-height: 10vh;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  background:#745910;
+  justify-content: space-between;
+  z-index: 100; /* Zorg ervoor dat de navbar boven andere elementen wordt weergegeven */
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+nav li {
+  font-size: 2.5rem;
+  padding: 0 4rem 0 4rem;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.down{
+  margin-top: 10%;  
+  margin-left: 50px;
+  width:90vw;
+ min-height:80vh;
+}
+ nav a:hover:not(.active) {
+  background-color: lightgrey;
+  color: black;
+} 
+
+
+.active { 
+   background-color:#bfc129;
+}
+
+      /* Dropdown menu */ 
+        
+ .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:#745910;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  flex-direction: column; /* Change to column layout */
+  align-items: center; /* Center the items horizontally */
+  padding: 1rem 0; /* Add padding for spacing */
+}
+
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+  width: 100%; /* Expand links to fill the container */
+  text-align: center; /* Center text horizontally */
+}
+
+/* Change color of dropdown links on hover */
+ .dropdown-content a:hover {
+  background-color:lightgrey;
+} 
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: flex; /* Display the dropdown items as a flex container */
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/* .dropdown:hover .dropbtn {
+  background-color:lightgrey; 
+} */
+#jaar2:hover
+{
+  color: black;
+} 
+#logo
+ {   text-decoration: none;
+    color: white;
+    font-family: "Pattaya-Regular";
+    font-size: 30px;
+    font-weight: bold;
+   
+  }
+    /*  style voor footer */
+.foot
+{
+  width: 100vw;
+  background-color:#745910;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 10vh;
+  bottom:0;
+  margin-top: 20px;
+}
+.foot .foot-link{
+  text-decoration: none;
+  color: white;
+}
