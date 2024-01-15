@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <main class="down">
+    <h1>welkom om te spelen </h1>
+
+  <p id="check"></p>
+
+  <script>
+   ;
+let bedrag = prompt("Je moet 3 eruo of meer doneren ");
+ 
+if (bedrag >= 3) {
+    document.getElementById("resultaat").innerHTML = "U  mag spelen !";
+    document.getElementById("resultaat").style.color = "green";
+} else {
+    document.getElementById("resultaat").innerHTML = "Helaas, te weinig geld.";
+    document.getElementById("resultaat").style.color = "red";
+}
+  </script>
+
+  </main>
+  <footer class="foot">
+    <p ><a  class=" foot-link" href="https://www.techniekcollegerotterdam.nl/contact"> Contact</a></p>
+    <p ><a  class=" foot-link" href="Over-ons.html"> Over ons</a></p>
+  </footer>
+
+</body>
+</html>
