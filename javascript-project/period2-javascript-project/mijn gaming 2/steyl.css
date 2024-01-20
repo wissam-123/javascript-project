@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&family=Titillium+Web:wght@900&display=swp');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-family: 'Roobert', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+
+header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(imge/glowing-lines-human-heart-3d-shape-dark-background-generative-ai.jpg) no-repeat center center/cover;
+
+}
+
+.nav1{
+    width: 100%;
+    justify-content: end;
+    padding: 30px;
+    padding-bottom: 10px;
+    gap: 30px;
+}
+
+.icons{
+    gap: 18px;
+    margin-right: -600px;
+    z-index: 2;
+}
+.icons{
+    color: #ffff;
+    cursor: pointer;
+}
+.icons i:hover{
+    color:var(--main-color) ;
+    
+}
+
+.lsbtn button{
+    border: none;
+    color: #ffff;
+    background-color: var(--main-color);
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    z-index: 2;
+    transform: 0.3s linear;
+}
+
+.lsbtn button:nth-child(1){
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-right: 1px solid #999;
+}
+.lsbtn button:nth-child(2){
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.lsbtn button:hover{
+    background-color: #ffff;
+    color: black;
+}
+
+.mainnav{
+    justify-content: space-between;
+
+}
+
+.logo{
+    margin-left: -300px;
+    margin-top: -90px;
+    z-index: 2;
+}
+
+.logo h1 a{
+    font-family: var(--font-family);
+    font-size: 40px;
+    font-weight: 800;
+    color: #ffff;
+    transition: 0.3s linear;
+
+}
+
+.logo h1 a span{
+    color: var(--main-color);
+}
+.logo h1 a:hover{
+    color: var(--main-color);
+}
+.logo h1 a:hover span{
+    color: #ffff;
+}
+
+.navlist{
+    z-index: 2;
+    margin: 10px;
+    margin-right: -300px;
+}
+
+.navlist ul{
+    gap: 40px;
+}
+.navlist ul li a{
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s linear;
+    
+}
+.navlist ul li .active{
+    color: var(--main-color);
+}
