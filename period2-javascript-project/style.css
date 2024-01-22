@@ -1,3 +1,4 @@
+/* Resetten van de marge en padding voor alle HTML-elementen */
 * {
   margin: 0;
   padding: 0;
@@ -10,9 +11,21 @@ body {
   font-family: "Goldman",cursive;
   font-size: large;
   background-color:#f8eed3;
-  margin-top:0;  
+  height: 80vh;
+  width: 100vw;
   }
-  
+ /* Algemene stijlen voor het canvas en de body */
+canvas { background: #eee; }
+* {
+    padding: 0;
+    margin: 0;
+  }
+/* Stijlregels voor het 'canvas'-element */
+canvas {
+  background: #eee;  /* Achtergrondkleur ingesteld op lichte grijstint */
+  display: block;     /* Weergave als een blok */
+  margin: 0 auto;   /* Automatische marge boven en onder, en in het midden voor centreren */
+}
         /* style navigatie bar */
   
 nav {
@@ -43,11 +56,8 @@ nav a {
   text-decoration: none;
 }
 
-.down{
-  margin-top: 5%;  
-  margin-left: 5%;
-  width:90vw;
- min-height:80vh;
+.position_main{
+  margin-top: 7%;  
 }
  nav a:hover:not(.active) {
   background-color: lightgrey;
@@ -67,7 +77,7 @@ nav a {
   background-color:#745910;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 4;
   flex-direction: column; /* Change to column layout */
   align-items: center; /* Center the items horizontally */
   padding: 1rem 0; /* Add padding for spacing */
@@ -95,13 +105,12 @@ nav a {
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-/* .dropdown:hover .dropbtn {
-  background-color:lightgrey; 
-} */
 #jaar2:hover
 {
   color: black;
 } 
+
+/* style logo */
 #logo
  {   text-decoration: none;
     color: white;
@@ -110,7 +119,7 @@ nav a {
     font-weight: bold;
    
   }
-                     /*  style voor footer */
+                     /*  style footer */
 .foot
 {
   width: 100vw;
@@ -144,6 +153,8 @@ nav a {
   justify-content: space-around;
   padding: 5%;
 }
+
+/* style title */
    .intp{
     margin-top: 3%;
     border:3px solid #e8d28d;
@@ -165,19 +176,33 @@ nav a {
 }
 .position-h{
   text-align: center;
-  font-size: xx-large;
+  font-size: 3em;
  margin-top: 5%;
+ color: #7b1212;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
- /* flex ox rouw */
+ /* flex FOR FOTOS */
 .contant{
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
- margin-top: 30px;
+  flex-direction: row;
+  justify-content: space-between;
 }  
+.item1 {
+  width:50%;
+  margin: 10px;
+  }
+.item2 {
+  margin: 50px;
+  }
 
+.intp{
+   border:3px solid black;
+   border-radius: 3px ;
+   width: 30em;
+   
+ }
 
-                      /* fromulieren */
+                      /* style fromulieren */
 .donation-form {
   background-color: #fff;
   padding: 20px;
@@ -202,7 +227,7 @@ input {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-
+/*  style voor button van formulier */
 button {
   padding: 12px;
   background-color: #4caf50;
@@ -215,4 +240,168 @@ button {
 
 button:hover {
   background-color: #45a049;
+}
+
+    /* protfolio */
+      #display {
+          width: 300px;
+          height: 200px;
+          border: 1px solid #ccc;
+          margin-bottom: 10px;
+          padding: 10px;
+       
+      }
+
+      /* background fotos */
+      .background-img{
+        background-image: url(fotos/background.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+       background-size: cover;
+       z-index: 4;
+       } 
+
+       .background-img2{
+        background-image: url(fotos/backgame1.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+       background-size: cover;
+       z-index: 4;
+       } 
+       .background-img1{
+        background-image: url(fotos/img3.jpeg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+       background-size: cover;
+       z-index: 4;
+       } 
+
+       /* FLEXBOX PROTFOLIO PAGINA  */
+       .container2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+       justify-content: space-evenly;
+    }
+
+  
+    .link-box:link, .link-box:visited {
+      background-color: #f44336;
+      color: white;
+      padding: 14px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      
+    }
+    p{
+      font-weight: bold;
+    }
+
+  .CV {
+      color: white;
+    }
+
+ /*  style for blok waar kan je game kiezen of uitkleggen game */
+    .blok_game{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;/* Hiermee wordt de container de volledige hoogte van het scherm ingenomen */
+      margin: 0;/* Verwijder standaardmarge om ongewenste ruimte te voorkomen */
+  }
+    
+
+  /* game background */
+     
+.card{
+background-color: #Fff;
+width: 15em;
+height: 15em;
+box-shadow: 0 5px 20px black;
+border-radius: 10px;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+flex-direction: column;
+margin-left:25%;
+}
+/* style tilte */
+.title{
+  margin-bottom: 5%;
+  color: rgb(143, 25, 25);
+  font-size: 3em;
+  font-weight: bolder;
+  text-align: center;
+  margin-left: 8%;
+}
+.position {
+  text-align: center;
+  margin-top: 15%;
+  margin-right:10%;
+}
+
+.card-container {
+  display: inline-block;
+}
+   
+    /*style tabel uitleggen game */
+ 
+  .color-tr { background-color: rgb(204, 176, 39);
+  border: 5px solid black;
+  border-radius:12px;}
+/*style tabel uitleggen game */
+.photo-gallery {
+ display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 5%;
+  width: 100%;
+  border-collapse: collapse;
+ 
+}
+
+.photo-gallery th, .photo-gallery td {
+   padding: 10px;
+   text-align: center;}
+
+ .photo-gallery img {
+  max-width: 100%;
+  height: auto;
+}
+ /* style title uitleggen game */
+ .large-title {
+  font-size: 36px; /* Adjust the font size as needed */
+  font-weight: bold;
+  color: red; /* Color for "UITLEGGEN" */
+  text-align: center;
+}
+
+.large-title .blue-text {
+  color: blue; /* Color for "GAME" */
+}
+/*style tite protfolio */
+.title2{
+  color: #Fff;
+  text-align: center;
+  font-size: 5em;
+ 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* position for blok of CV */
+.cv-position{
+  margin-left: 10%;
+  margin-bottom: 5%;
+}
+ h2{
+  color: rgb(226, 27, 27);
+ }
+
+
+ canvas {
+  border: 1px solid #000;
+  display: block;
+  margin: 20px auto;
 }
