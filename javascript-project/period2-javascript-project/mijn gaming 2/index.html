@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="steyl.css">
+    <link rel="stylesheet" href="steyl2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="description" content="Multiplayer Kruisje-Nulletje Spel">
+    <title>Mijn Games</title>
+</head>
+<body class="center">
+
+    <header>
+        <nav class="container">
+            <div class="nav1 flex">
+                
+                
+            </div>
+
+            <div class="mainnav flex">
+                <div class="logo">
+                    <h1><a href="#">CODE<span>XGAME.</span></a></h1>
+                </div>
+                <div class="navlist">
+                    <ul class="flex">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="overGame.html">Over Game<i class="fa-solid fa-angle-down"></i></a></li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <h1>Boter, Kaas en Eiren!</h1>
+        <div class="center" id="main">
+            <h4>--Speel en Geniet--</h4>
+                <button onclick="startSpel()" id="Start" class="button">Start een Nieuw Spel</button>
+                <br>
+                <button onclick="learn()" class="button">Leer Hoe je het Spel Speelt?</button>
+                <br>
+                
+
+        </div>
+        <div class="center" id="learn">
+            <p>
+                Jij bent X, je vriend is O. 
+                <br>
+                De eerste speler die 3 van zijn tekens op een rij heeft (verticaal, horizontaal of diagonaal) is de winnaar.
+                Als alle 9 vakjes vol zijn, eindigt het spel. Als geen enkele speler 3 tekens op een rij heeft, eindigt het spel in een gelijkspel.
+            </p>
+            <br>
+            <button onclick="main()" class="button">Terug</button>
+        </div>
+        <div class="center" id="game">
+            <div class="center" style="margin: 5px;">
+                <h3 id="textPlayer" style="font-size: 0.9rem;">(Huidige Speler 1)</h2>
+                <h3 id="textComd" style="font-size: 0.9rem;">Speler 2 kan nu spelen...</h2>
+            </div>
+            <canvas id="tic-tac-toe-board" class="center"></canvas>
+        </div>
+        <script src="js.js"></script>
+    </header>
+</body>
+</html>
